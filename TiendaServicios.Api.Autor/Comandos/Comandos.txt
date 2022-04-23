@@ -1,0 +1,75 @@
+Instalar 
+dotnet tool install --global dotnet-ef -version 6.0.0
+ccrear los archivos para crear la tabla 
+dotnet ef migrations add MigracionSqlServerInicial --project TiendaServicios.Api.Libro
+
+crear tablas 
+dotnet ef database update --project TiendaServicios.Api.Libro
+
+
+ccrear los archivos para crear la tabla 
+dotnet ef migrations add MigracionPostgresInicial --project TiendaServicio.Api.Autor
+
+crear tablas code first
+dotnet ef database update --project TiendaServicio.Api.Autor
+o
+dotnet ef database update si estas dentro de la carpeta del proyecto
+
+https://hub.docker.com/_/microsoft-mssql-server?tab=description
+la imagen se descarga asi 
+docker pull mcr.microsoft.com/mssql/server
+
+Crear un contendor apartir de la imagen  
+docker run --name sqlmoi -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=#2022#AdminCursos." -p 1433:1433 -d mcr.microsoft.com/mssql/server:latest
+docker run --name postgres-moi -e POSTGRES_PASSWORD=#2022#AdminCursos. -d -p 5432:5432 postgres:latest
+
+Entrar a la administracion de la base :
+docker exec -it postgres.moi bash
+psql -U postgres
+\du --valida permisos 
+\l  -saber las bases de datos existentes
+\c --tiendalibroautor para entrar a la base
+\d ..saber las relaciones o las tablas en la base
+
+
+
+lista los contenedores
+docker container list
+docker stop     "Primeros 3 numeros"
+docker rm -f    "Primeros 3 numeros"
+docker run -d dd3d931186ce -p 8080:80 mapeo de puertos
+docker run -p 80:80 -p 6044:6044 --name apiLbro -d dd3d931186ce
+
+
+Lista de imagenes 
+docker images 
+Eliminar imagenes
+docker rmi -f  e72ed5b78e61
+
+
+lanzar un conitener apartir de un archivo .yml 
+cd /home/luis/Escritorio/MicroServicio2/MicroServiceApi.Libro/
+cd /home/luis/Documentos/ImagenesDOcker/MicroServiceApi.Libro/TiendaServicios.Api.Libro/
+docker-compose -f docker-compose.yml up -d
+
+docker file 
+docker build -t apilibro:net6dev . "En miniscutla"
+
+Crea una red 
+docker network create microservicenet
+
+Listar una redes 
+docker network list
+
+desconexion de red 
+docker network disconnect IDNetwork  IDContainer
+Eliminar red
+docker network rm 15f25f2e358d
+
+
+
+Agrega un contenedor a la red
+docker network connect microservicenet e06
+
+inspeccionar una red
+docker network inspect microservicenet 
