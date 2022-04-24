@@ -28,6 +28,7 @@ Entrar a la administracion de la base Postgres :
 docker exec -it postgres-moi bash
 psql -U postgres  --inicar seccion 
 \du --valida permisos 
+create database tiendalibroautor;
 \l  -saber las bases de datos existentes
 create database tiendalibroautor
 \c tiendalibroautor para entrar a la base
