@@ -1,4 +1,4 @@
-Instalar 
+\Instalar 
 dotnet tool install --global dotnet-ef -version 6.0.0
 ccrear los archivos para crear la tabla 
 dotnet ef migrations add MigracionSqlServerInicial --project TiendaServicios.Api.Libro
@@ -25,11 +25,12 @@ docker run --name postgres-moi -e POSTGRES_PASSWORD=#2022#AdminCursos. -d -p 543
 docker run --name mysql.moi -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=#2022#AdminCursos. mysql:latest
 
 Entrar a la administracion de la base Postgres :
-docker exec -it postgres.moi bash
+docker exec -it postgres-moi bash
 psql -U postgres  --inicar seccion 
 \du --valida permisos 
 \l  -saber las bases de datos existentes
-\c --tiendalibroautor para entrar a la base
+create database tiendalibroautor
+\c tiendalibroautor para entrar a la base
 \d ..saber las relaciones o las tablas en la base
 Entrar a la administracion de la base MYsql :
 docker exec -it mysql.moi bash
@@ -46,6 +47,13 @@ docker rm -f    "Primeros 3 numeros"
 docker run -d dd3d931186ce -p 8080:80 mapeo de puertos
 docker run -p 80:80 -p 6044:6044 --name apiLbro -d dd3d931186ce
 docker container list -a los contenedor dormidos
+
+docker run -p 6104:80 --name apiautor -d b13210c0becc
+docker run -p 6105:80 --name apilibro -d fa347f154d00
+docker run -p 6106:80 --name apicarrito -d a872e4d0f0b9
+docker run -p 6107:80 --name apigateway -d c98a2bb35575
+
+
 
 
 Lista de imagenes 

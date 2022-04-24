@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using TiendaServicios.Api.Autor.Aplicacion;
 using TiendaServicios.Api.Autor.Persistencia;
 
@@ -39,16 +40,18 @@ namespace TiendaServicios.Api.Autor
 
             services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
             services.AddAutoMapper(typeof(Consulta.Manejador));
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TiendaServicios.Api.Autor", Version = "v1" });
+            });
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseRouting();
 
