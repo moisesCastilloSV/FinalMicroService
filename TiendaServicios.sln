@@ -11,15 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiendaServicios.Api.Carrito
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiendaServicios.Api.Libro.Tests", "TiendaServicios.Api.Libro.Tests\TiendaServicios.Api.Libro.Tests.csproj", "{8D4C46ED-7627-4869-B832-DE025C49694D}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D3482EDA-8BEF-40E9-AEA3-0F0EE15CA5DB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TiendaServicios.Api.Gateway", "TiendaServicios.Api.Gateway\TiendaServicios.Api.Gateway.csproj", "{94EE7D12-4C28-4728-8E82-D8460CE2EEEB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comandos", "Comandos", "{61B3C335-90E8-4E24-8419-4DCEF40C2A17}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\MicroServicio2\MicroServiceApi.Libro\TiendaServicios.Api.Libro\Comandos\CodidosError.txt = ..\..\MicroServicio2\MicroServiceApi.Libro\TiendaServicios.Api.Libro\Comandos\CodidosError.txt
-		..\..\MicroServicio2\MicroServiceApi.Libro\TiendaServicios.Api.Libro\Comandos\Comandos.txt = ..\..\MicroServicio2\MicroServiceApi.Libro\TiendaServicios.Api.Libro\Comandos\Comandos.txt
-	EndProjectSection
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5A5A1D69-14F5-4F71-B2A4-94A63312690D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +37,14 @@ Global
 		{8D4C46ED-7627-4869-B832-DE025C49694D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D4C46ED-7627-4869-B832-DE025C49694D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D4C46ED-7627-4869-B832-DE025C49694D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3482EDA-8BEF-40E9-AEA3-0F0EE15CA5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3482EDA-8BEF-40E9-AEA3-0F0EE15CA5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3482EDA-8BEF-40E9-AEA3-0F0EE15CA5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3482EDA-8BEF-40E9-AEA3-0F0EE15CA5DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94EE7D12-4C28-4728-8E82-D8460CE2EEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94EE7D12-4C28-4728-8E82-D8460CE2EEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94EE7D12-4C28-4728-8E82-D8460CE2EEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94EE7D12-4C28-4728-8E82-D8460CE2EEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5A1D69-14F5-4F71-B2A4-94A63312690D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5A1D69-14F5-4F71-B2A4-94A63312690D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5A1D69-14F5-4F71-B2A4-94A63312690D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5A1D69-14F5-4F71-B2A4-94A63312690D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

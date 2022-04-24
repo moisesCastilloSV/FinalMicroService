@@ -24,4 +24,3 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "6107:80"
-

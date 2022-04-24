@@ -19,18 +19,24 @@ https://hub.docker.com/_/microsoft-mssql-server?tab=description
 la imagen se descarga asi 
 docker pull mcr.microsoft.com/mssql/server
 
-Crear un contendor apartir de la imagen  
+Crear un contendor apartir de la imagen  Docker hub
 docker run --name sqlmoi -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=#2022#AdminCursos." -p 1433:1433 -d mcr.microsoft.com/mssql/server:latest
 docker run --name postgres-moi -e POSTGRES_PASSWORD=#2022#AdminCursos. -d -p 5432:5432 postgres:latest
+docker run --name mysql.moi -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=#2022#AdminCursos. mysql:latest
 
-Entrar a la administracion de la base :
+Entrar a la administracion de la base Postgres :
 docker exec -it postgres.moi bash
-psql -U postgres
+psql -U postgres  --inicar seccion 
 \du --valida permisos 
 \l  -saber las bases de datos existentes
 \c --tiendalibroautor para entrar a la base
 \d ..saber las relaciones o las tablas en la base
-
+Entrar a la administracion de la base MYsql :
+docker exec -it mysql.moi bash
+mysql -uroot -p#2022#AdminCursos.  Conectarse 
+create database carritocompra;
+use carritocompra;
+show tables; --ver tablas
 
 
 lista los contenedores

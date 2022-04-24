@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>d3482eda-8bef-40e9-aea3-0f0ee15ca5db</ProjectGuid>
+    <ProjectGuid>5a5a1d69-14f5-4f71-b2a4-94a63312690d</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/Autor</DockerServiceUrl>
     <DockerServiceName>tiendaservicios.api.autor</DockerServiceName>
