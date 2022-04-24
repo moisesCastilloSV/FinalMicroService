@@ -1,0 +1,13 @@
+﻿http://192.168.1.8:6105/api/LibroMaterial 
+{
+ "titulo" : "SQL SERVER DBA",
+ "fechaPubilicacion" : "2022-04-23",
+ "autorLibro" :
+}
+
+http://192.168.1.8:6104/api/LibroMaterial 
+{
+ "nombre": "Luis Daniel",
+ "apellido" : "Castillo Arriola",
+ "FechaNacimiento":"1996-08-22"
+}
