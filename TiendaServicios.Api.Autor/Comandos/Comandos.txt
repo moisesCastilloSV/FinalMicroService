@@ -45,6 +45,7 @@ docker stop     "Primeros 3 numeros"
 docker rm -f    "Primeros 3 numeros"
 docker run -d dd3d931186ce -p 8080:80 mapeo de puertos
 docker run -p 80:80 -p 6044:6044 --name apiLbro -d dd3d931186ce
+docker container list -a los contenedor dormidos
 
 
 Lista de imagenes 
